@@ -46,6 +46,23 @@
 			<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="18"/>
 		</InputField>
+		<CheckBoxField name="НаличиеВставки" id="19">
+			<DataPath>Объект.НаличиеВставки</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НаличиеВставкиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НаличиеВставкиРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">НаличиеВставкиПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="Вставка" id="22">
+			<DataPath>Объект.Вставка</DataPath>
+			<Visible>false</Visible>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ChoiceForm>Catalog.ВидыВставок.Form.ФормаВыбора</ChoiceForm>
+			<ContextMenu name="ВставкаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ВставкаРасширеннаяПодсказка" id="24"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

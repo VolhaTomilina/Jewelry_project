@@ -245,10 +245,10 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>Бухгалтерия</Subsystem>
 			<Subsystem>Продажи</Subsystem>
 			<Subsystem>Закупки</Subsystem>
 			<Subsystem>Персонал</Subsystem>
+			<Subsystem>Бухгалтерия</Subsystem>
 			<CommonPicture>Продажи</CommonPicture>
 			<CommonPicture>Закупки</CommonPicture>
 			<CommonPicture>Персонал</CommonPicture>
@@ -266,6 +266,7 @@
 			<Catalog>Материалы</Catalog>
 			<Catalog>Личное</Catalog>
 			<Catalog>КонтактнаяИнформация</Catalog>
+			<Catalog>ВидыВставок</Catalog>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>ПродажаИзделий</Document>
 			<Document>НачислениеЗП</Document>
@@ -276,6 +277,7 @@
 			<Enum>СтавкиНДС</Enum>
 			<Enum>ВидМеталла</Enum>
 			<Enum>ВидНоменклатуры</Enum>
+			<Enum>ТипКамня</Enum>
 			<Report>АнализПродаж</Report>
 			<Report>ОтчетПоИзделиям</Report>
 			<Report>ОтчетПоМатериалам</Report>
