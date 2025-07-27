@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="47">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Склад" id="44">
+			<DataPath>Объект.Склад</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СкладКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="Клиент" id="7">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Ювелир" id="10">
+			<DataPath>Объект.Ювелир</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЮвелирКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЮвелирРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="ПереченьУслуг" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПереченьУслуг</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПереченьУслугКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ПереченьУслугКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="ПереченьУслугРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ПереченьУслугСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>ПереченьУслуг</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьУслугСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПереченьУслугСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПереченьУслугСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>ПереченьУслуг</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьУслугСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПереченьУслугСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПереченьУслугУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>ПереченьУслуг</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПереченьУслугУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ПереченьУслугУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПереченьУслугНомерСтроки" id="26">
+					<DataPath>Объект.ПереченьУслуг.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПереченьУслугНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПереченьУслугНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<InputField name="ПереченьУслугИзделие" id="29">
+					<DataPath>Объект.ПереченьУслуг.Изделие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПереченьУслугИзделиеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПереченьУслугИзделиеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПереченьУслугУслуга" id="32">
+					<DataPath>Объект.ПереченьУслуг.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПереченьУслугУслугаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПереченьУслугУслугаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ПереченьУслугСтоимость" id="35">
+					<DataPath>Объект.ПереченьУслуг.Стоимость</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПереченьУслугСтоимостьКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПереченьУслугСтоимостьРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПереченьУслугЗатраченныеМатериалы" id="38">
+					<DataPath>Объект.ПереченьУслуг.ЗатраченныеМатериалы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПереченьУслугЗатраченныеМатериалыКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПереченьУслугЗатраченныеМатериалыРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПереченьУслугКоличество" id="41">
+					<DataPath>Объект.ПереченьУслуг.Вес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПереченьУслугКоличествоКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПереченьУслугКоличествоРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОказаниеУслуги</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

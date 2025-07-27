@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.20">
+	<Item id="6775bbf6-44d3-412d-b796-a6225c2834c2">
+		<Name>Невыход</Name>
+		<Code>Невыход</Code>
+		<Description>Невыход</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="0a0d3ef1-9bb6-40eb-ac87-6dd38b0a768c">
+		<Name>Оклад</Name>
+		<Code>Оклад</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Leading>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Невыход</CalculationType>
+		</Leading>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Невыход</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="60718a46-2b42-42b2-8c6c-3ad9a51d3dc7">
+		<Name>Премия</Name>
+		<Code>Премия</Code>
+		<Description>Премия</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Невыход</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</CalculationType>
+		</Base>
+		<Leading>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Невыход</CalculationType>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Оклад</CalculationType>
+		</Leading>
+	</Item>
+</PredefinedData>

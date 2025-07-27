@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="47">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДокПродажи" id="13">
+			<DataPath>Объект.ДокПродажи</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДокПродажиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДокПродажиРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ДокПродажиПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Клиент" id="7">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Склад" id="44">
+			<DataPath>Объект.Склад</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СкладКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="Основание" id="10">
+			<DataPath>Объект.Основание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОснованиеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="НоменклатураВозврата" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.НоменклатураВозврата</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НоменклатураВозвратаКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="НоменклатураВозвратаКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="НоменклатураВозвратаРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="НоменклатураВозвратаСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>НоменклатураВозврата</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураВозвратаСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="НоменклатураВозвратаСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НоменклатураВозвратаСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>НоменклатураВозврата</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураВозвратаСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="НоменклатураВозвратаСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НоменклатураВозвратаУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>НоменклатураВозврата</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НоменклатураВозвратаУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="НоменклатураВозвратаУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="НоменклатураВозвратаНомерСтроки" id="29">
+					<DataPath>Объект.НоменклатураВозврата.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НоменклатураВозвратаНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="НоменклатураВозвратаНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="НоменклатураВозвратаНоменклатура" id="32">
+					<DataPath>Объект.НоменклатураВозврата.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоменклатураВозвратаНоменклатураКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="НоменклатураВозвратаНоменклатураРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="НоменклатураВозвратаЦена" id="35">
+					<DataPath>Объект.НоменклатураВозврата.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоменклатураВозвратаЦенаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="НоменклатураВозвратаЦенаРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">НоменклатураВозвратаЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НоменклатураВозвратаКоличество" id="38">
+					<DataPath>Объект.НоменклатураВозврата.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоменклатураВозвратаКоличествоКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="НоменклатураВозвратаКоличествоРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">НоменклатураВозвратаКоличествоПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НоменклатураВозвратаСумма" id="41">
+					<DataPath>Объект.НоменклатураВозврата.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоменклатураВозвратаСуммаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="НоменклатураВозвратаСуммаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">НоменклатураВозвратаСуммаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Возврат</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
