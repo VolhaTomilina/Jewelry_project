@@ -253,6 +253,11 @@
 			<CommonPicture>Закупки</CommonPicture>
 			<CommonPicture>Персонал</CommonPicture>
 			<CommonPicture>Бухгалтерия</CommonPicture>
+			<Role>Администратор</Role>
+			<Role>Бухгалтер</Role>
+			<Role>ПродавецКассир</Role>
+			<Role>Ювелир</Role>
+			<Role>Директор</Role>
 			<CommonModule>РаботаСДокументами</CommonModule>
 			<CommonModule>РаботаСоСправочниками</CommonModule>
 			<CommonModule>ПроведенияРасчета</CommonModule>

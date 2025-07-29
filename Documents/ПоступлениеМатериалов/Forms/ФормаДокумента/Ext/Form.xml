@@ -86,6 +86,13 @@
 					<ContextMenu name="ПоступлениеМатериаловМатериалКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ПоступлениеМатериаловМатериалРасширеннаяПодсказка" id="31"/>
 				</InputField>
+				<InputField name="ПоступлениеМатериаловКоличество1" id="52">
+					<DataPath>Объект.ПоступлениеМатериалов.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПоступлениеМатериаловКоличество1КонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПоступлениеМатериаловКоличество1РасширеннаяПодсказка" id="54"/>
+				</InputField>
 				<InputField name="ПоступлениеМатериаловВидМеталла" id="47">
 					<DataPath>Объект.ПоступлениеМатериалов.ВидМеталла</DataPath>
 					<EditMode>EnterOnInput</EditMode>
