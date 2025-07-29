@@ -1,6 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <HomePageWorkArea xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
-	<LeftColumn/>
-	<RightColumn/>
+	<LeftColumn>
+		<Item>
+			<Form>Document.ПриходнаяНакладная.Form.ФормаДокумента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+				<xr:Value name="Role.ПродавецКассир">false</xr:Value>
+				<xr:Value name="Role.Ювелир">false</xr:Value>
+				<xr:Value name="Role.Директор">false</xr:Value>
+			</Visibility>
+		</Item>
+	</LeftColumn>
+	<RightColumn>
+		<Item>
+			<Form>Catalog.Номенклатура.Form.ФормаЭлемента</Form>
+			<Height>10</Height>
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Бухгалтер">false</xr:Value>
+				<xr:Value name="Role.ПродавецКассир">false</xr:Value>
+				<xr:Value name="Role.Ювелир">false</xr:Value>
+				<xr:Value name="Role.Директор">false</xr:Value>
+			</Visibility>
+		</Item>
+	</RightColumn>
 </HomePageWorkArea>
